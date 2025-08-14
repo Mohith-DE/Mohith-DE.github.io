@@ -26,14 +26,14 @@ SECRET_KEY = 'django-insecure-*iq-3!#tg^g#ux_#xg$_5gyculg5%c%7ajnk3lx6g%zx^!ba@1
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "54.226.200.103",    # your EC2 public IP
+    "54.208.133.30",    # your EC2 public IP
     "localhost",
     "127.0.0.1",
     # add your domain here later, e.g. "myapp.example.com"
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "http://54.226.200.103",
-    "http://54.226.200.103:8000",   # if you’re hitting port 8000 directly
+    "http://54.208.133.30",
+    "http://54.208.133.30:8000",   # if you’re hitting port 8000 directly
     # add "https://myapp.example.com" when you put it behind HTTPS
 ]
 
