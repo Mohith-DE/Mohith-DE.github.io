@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-*iq-3!#tg^g#ux_#xg$_5gyculg5%c%7ajnk3lx6g%zx^!ba@1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 # Application definition
+ALLOWED_HOTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
