@@ -17,13 +17,13 @@ class PostListView(ListView):  # Generic view to list posts
     template_name = 'blog/home.html'  # Specify your template name #<app>/<model>_<viewtype>.html
     context_object_name = 'posts'  # Name of the context variable to use in the template
     ordering = ['-date_posted']
-    paginate_by = 5  # Number of posts per page
+    paginate_by = 4  # Number of posts per page
 
 class UserPostListView(ListView):
     model = Post
     template_name = 'blog/user_posts.html'
     context_object_name = 'posts'
-    paginate_by = 5 
+    paginate_by = 4  
 
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
